@@ -8,12 +8,12 @@
     "clean-non-aot": "rimraf dist/non-aot/*",
 
     "start:aot": "webpack-dev-server --config config/webpack.prod.aot.js --watch --profile --progress",
-    "build:aot": "npm run clean-aot && webpack --config config/webpack.prod.aot.js --progress --profile --bail",
+    "build:aot": "npm run clean-aot && ./node_modules/.bin/webpack --config config/webpack.prod.aot.js --progress --profile --bail",
 
     "start:non-aot": "webpack-dev-server --config config/webpack.prod.non-aot.js --watch --profile --progress",
-    "build:non-aot": "npm run clean-non-aot && webpack --config config/webpack.prod.non-aot.js --progress --profile --bail",
+    "build:non-aot": "npm run clean-non-aot && ./node_modules/.bin/webpack --config config/webpack.prod.non-aot.js --progress --profile --bail",
 
-    "start": "webpack-dev-server --config config/webpack.dev.js --inline --progress --port 8080"
+    "start": "node_modules/.bin/webpack-dev-server --config config/webpack.dev.js --inline --progress --port 9003"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   },
   "devDependencies": {
     "@angular/compiler-cli": "2.4.x",
-    "@ngtools/webpack": "1.2.8",
+    "@ngtools/webpack": "^1.3.0",
     "@types/node": "6.0.45",
     "angular2-template-loader": "0.6.x",
     "awesome-typescript-loader": "3.0.x",
