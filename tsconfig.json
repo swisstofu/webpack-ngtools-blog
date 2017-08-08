@@ -14,5 +14,8 @@
   "exclude": [
     "node_modules/*",
     "app/boot-aot.ts"
+  ],
+  "types":[
+    "angular"
   ]
 }

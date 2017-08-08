@@ -1,5 +1,6 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
+import { UpgradeModule } from '@angular/upgrade/static';
 
 // application
 import {AppComponent} from "./app.component";
@@ -15,7 +16,8 @@ import {Simple6Component} from "./components/simple-6.component";
 
 @NgModule({
     imports: [
-        BrowserModule
+        BrowserModule,
+        UpgradeModule
     ],
     declarations: [
         AppComponent,
@@ -29,7 +31,10 @@ import {Simple6Component} from "./components/simple-6.component";
         Simple5Component,
         Simple6Component
     ],
-    bootstrap: [AppComponent]
+    bootstrap: []
 })
 export class AppModule {
+	ngDoBootstrap() {
+		// empty
+	}
 }
