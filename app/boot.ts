@@ -1,4 +1,4 @@
-import './angular.module.ng1';
+import './app.module.ng1';
 
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { UpgradeModule } from '@angular/upgrade/static';

@@ -1,4 +1,4 @@
-import './angular.module.ng1';
+import './app.module.ng1';
 
 import {platformBrowser} from "@angular/platform-browser";
 import { UpgradeModule } from '@angular/upgrade/static';
