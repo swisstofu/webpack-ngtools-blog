@@ -23,6 +23,7 @@
   },
   "homepage": "http://www.ag-grid.com/",
   "dependencies": {
+    "@angular/animations": "4.3.x",
     "@angular/common": "4.3.x",
     "@angular/compiler": "4.3.x",
     "@angular/core": "4.3.x",
@@ -35,7 +36,7 @@
     "@angular/upgrade": "4.3.x",
     "angular": "1.6.x",
     "core-js": "2.5.x",
-    "rxjs": "5.0.x",
+    "rxjs": "5.4.x",
     "zone.js": "0.8.x"
   },
   "devDependencies": {
@@ -54,7 +55,7 @@
     "typescript": "2.2.x",
     "url-loader": "0.5.7",
     "webdriver-manager": "10.2.5",
-    "webpack": "2.2.x",
+    "webpack": "2.5.x",
     "webpack-dev-server": "2.4.x"
   }
 }

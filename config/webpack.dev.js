@@ -47,7 +47,12 @@ module.exports = {
 
         new HtmlWebpackPlugin({
             template: 'config/index.html'
-        })
+        }),
+
+	    new webpack.ContextReplacementPlugin(
+		    /angular(\\|\/)core(\\|\/)@angular/,
+		    path.resolve(__dirname, '../src')
+	    )
     ],
 
     devServer: {
