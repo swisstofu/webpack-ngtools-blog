@@ -32,6 +32,10 @@ module.exports = {
                 test: /\.ts$/,
                 loader: '@ngtools/webpack'
             },
+	        {
+		        test: /\.js$/,
+		        loader: '@ngtools/webpack'
+	        },
             {
                 test: /\.html$/,
                 loader: 'html-loader'

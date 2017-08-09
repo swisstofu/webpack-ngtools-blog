@@ -46,6 +46,11 @@ module.exports = {
             template: 'config/index.html'
         }),
 
+	    new webpack.ContextReplacementPlugin(
+		    /angular(\\|\/)core(\\|\/)@angular/,
+		    path.resolve(__dirname, '../src')
+	    ),
+
         new webpack.optimize.UglifyJsPlugin({
             beautify: false,
             comments: false,
