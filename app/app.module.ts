@@ -31,6 +31,9 @@ import {Simple6Component} from "./components/simple-6.component";
         Simple5Component,
         Simple6Component
     ],
+    entryComponents: [
+        AppComponent
+    ],
     bootstrap: []
 })
 export class AppModule {
