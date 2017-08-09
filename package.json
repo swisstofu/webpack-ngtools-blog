@@ -36,12 +36,14 @@
     "@angular/upgrade": "4.3.x",
     "angular": "1.6.x",
     "core-js": "2.5.x",
+    "lodash": "^4.17.4",
     "rxjs": "5.4.x",
     "zone.js": "0.8.x"
   },
   "devDependencies": {
     "@angular/compiler-cli": "4.3.x",
     "@ngtools/webpack": "^1.5.5",
+    "@types/lodash": "^4.14.72",
     "@types/node": "6.0.45",
     "angular2-template-loader": "0.6.x",
     "awesome-typescript-loader": "3.0.x",

@@ -1,4 +1,5 @@
 import {Component} from "@angular/core";
+import * as _ from 'lodash';
 
 @Component({
     selector: 'my-app',
@@ -20,5 +21,6 @@ import {Component} from "@angular/core";
 export class AppComponent {
     name: string = "Sean";
     constructor() {
+	    console.error(_.partition([1, 2, 3, 4], n => n % 2));
     }
 }
